@@ -12,6 +12,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locker Box</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -48,7 +50,6 @@ session_start();
         <!-- products grid strat -->
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
-
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
@@ -57,29 +58,30 @@ session_start();
                                 <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Locker1</text>
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">if you encounter a ploblem, contact 086 383 4044.</p>
+                                <!-- <p class="card-text">if you encounter a ploblem, contact 086 383 4044.</p> -->
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="index.html" class="btn btn-Success">open</a>
+                                        <a href="http://192.168.74.38/" class="btn btn-Success">open</a>
                                         <a href="#" class="btn btn-danger">close</a>
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
+                                    <small id="clock" class="text-body-secondary"></small>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <script src="./../scirpt/time_score.js"> </script>
+            <script src="./../scirpt/time.js"> </script>
         </div>
         <!-- products grid end -->
 
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="index.php"class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="index.php" class="nav-link px-2 text-body-secondary">Home</a></li>
             </ul>
             <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
         </footer>
-
     </div>
     <!-- container end -->
 
